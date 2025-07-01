@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Alts - Professional Alt Testing Services</title>
+    <meta name="description" content="Professional Roblox alternative account testing services. Test your game's performance and optimization with our alt account network. Unlimited testing access available.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Roblox Alts - Professional Alt Testing Services">
+    <meta property="og:description" content="Test your game's performance with our alternative account testing services. Simulate real player loads to identify bottlenecks.">
+    <meta property="og:type" content="website">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #16a34a;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #64748b;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #16a34a;
+        }
+        
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #16a34a;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #15803d;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-outline:hover {
+            background: white;
+            color: #16a34a;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+            padding: 8rem 0 4rem;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="20" y="20" width="20" height="20" fill="%23ffffff10"/><rect x="60" y="10" width="15" height="15" fill="%23ffffff08"/><rect x="10" y="60" width="25" height="25" fill="%23ffffff12"/></svg>');
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .hero .highlight {
+            color: #fde047;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 500;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .stat-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fde047;
+        }
+        
+        .stat-label {
+            color: #fde047;
+            font-weight: 500;
+        }
+        
+        /* Service Packages */
+        .packages {
+            padding: 5rem 0;
+            background: #f8fafc;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        
+        .section-header p {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .package-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        
+        .package-card.popular {
+            border: 3px solid #16a34a;
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #16a34a;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .package-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .package-price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #16a34a;
+            margin-bottom: 1rem;
+        }
+        
+        .package-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .package-features li {
+            padding: 0.5rem 0;
+            color: #64748b;
+        }
+        
+        .package-features li::before {
+            content: '✓';
+            color: #16a34a;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        /* How It Works */
+        .how-it-works {
+            padding: 5rem 0;
+            background: #dcfce7;
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .step-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #16a34a;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+        
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        
+        .step-description {
+            color: #64748b;
+        }
+        
+        /* Game Boosting Benefits */
+        .boosting-benefits {
+            margin-top: 3rem;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .benefit-category {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .benefit-icon {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 0.75rem;
+        }
+        
+        .benefit-icon.green { background: #22c55e; }
+        .benefit-icon.blue { background: #3b82f6; }
+        .benefit-icon.purple { background: #8b5cf6; }
+        .benefit-icon.yellow { background: #eab308; }
+        
+        .benefit-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #1e293b;
+        }
+        
+        .benefit-list {
+            list-style: none;
+        }
+        
+        .benefit-list li {
+            padding: 0.25rem 0;
+            color: #64748b;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 5rem 0;
+            background: #dcfce7;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question:hover {
+            background: #f8fafc;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: #64748b;
+            display: none;
+        }
+        
+        .faq-answer.open {
+            display: block;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: #16a34a;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #334155;
+            padding-top: 1rem;
+            text-align: center;
+            color: #94a3b8;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Contact Form */
+        .contact {
+            padding: 5rem 0;
+            background: white;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        /* Hidden sections for single page */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">Roblox Alts</div>
+                <ul class="nav-links">
+                    <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#packages" onclick="showSection('packages')">Packages</a></li>
+                    <li><a href="#how-it-works" onclick="showSection('how-it-works')">How It Works</a></li>
+                    <li><a href="#faq" onclick="showSection('faq')">FAQ</a></li>
+                    <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" onclick="showSection('contact')">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>
+                    Professional Roblox<br>
+                    <span class="highlight">Alt Testing Services</span>
+                </h1>
+                <p>
+                    Test your game's performance and optimization with our alternative account testing services. 
+                    Simulate real player loads to identify bottlenecks and improve player experience.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#packages" class="btn btn-primary" onclick="showSection('packages')">Start Testing Now</a>
+                    <a href="#how-it-works" class="btn btn-outline" onclick="showSection('how-it-works')">View Demo</a>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Alt Accounts</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Games Tested</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Packages -->
+    <section id="packages" class="packages hidden">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Testing Package</h2>
+                <p>Select the perfect package for your game testing needs. All packages include unlimited testing access.</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-name">Starter</div>
+                    <div class="package-price">$15</div>
+                    <ul class="package-features">
+                        <li>Up to 25 concurrent alt accounts</li>
+                        <li>Unlimited testing access</li>
+                        <li>Basic performance report</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%" onclick="showSection('contact')">Get Started</a>
+                </div>
+                
+                <div class="package-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="package-name">Professional</div>
+                    <div class="package-price">$35</div>
+                    <ul class="package-features">
+                        <li>Up to 100 concurrent alt accounts</li>
+                        <li>Unlimited testing access</li>
+                        <li>Detailed analytics report</li>
+                        <li>Priority support</li>
+                        <li>Custom test scenarios</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%" onclick="showSection('contact')">Get Started</a>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-name">Enterprise</div>
+                    <div class="package-price">$75</div>
+                    <ul class="package-features">
+                        <li>Up to 500 concurrent alt accounts</li>
+                        <li>Unlimited testing access</li>
+                        <li>Comprehensive analysis</li>
+                        <li>24/7 dedicated support</li>
+                        <li>Live monitoring dashboard</li>
+                        <li>API access</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%" onclick="showSection('contact')">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works hidden">
+        <div class="container">
+            <div class="section-header">
+                <h2>How Our Testing Works</h2>
+                <p>Simple, effective, and professional testing process designed for Roblox developers</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Submit Request</div>
+                    <div class="step-description">Provide your game details and testing requirements through our secure portal</div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Deploy Alt Accounts</div>
+                    <div class="step-description">Our network of alternative accounts joins your server to simulate real players</div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Execute Testing</div>
+                    <div class="step-description">Alt accounts perform realistic gameplay scenarios and stress-test your systems</div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-title">Receive Report</div>
+                    <div class="step-description">Get detailed analytics on performance, optimization, and player experience</div>
+                </div>
+            </div>
+
+            <!-- Game Boosting Benefits -->
+            <div class="boosting-benefits">
+                <div class="section-header">
+                    <h2>Game Boosting Benefits</h2>
+                    <p>Our alt account testing services provide additional benefits that help boost your game's visibility and success</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-category">
+                        <div class="benefit-header">
+                            <div class="benefit-icon green"></div>
+                            <div class="benefit-title">Visibility & Discovery</div>
+                        </div>
+                        <ul class="benefit-list">
+                            <li>• Allows players to find your game easier</li>
+                            <li>• Increases your game's search ranking</li>
+                            <li>• Boosts visibility in game categories</li>
+                            <li>• Improves discovery through trending algorithms</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="benefit-category">
+                        <div class="benefit-header">
+                            <div class="benefit-icon blue"></div>
+                            <div class="benefit-title">Popularity & Growth</div>
+                        </div>
+                        <ul class="benefit-list">
+                            <li>• Makes your game appear more popular</li>
+                            <li>• Gets your game recommended to more players</li>
+                            <li>• Increases social proof and player trust</li>
+                            <li>• Accelerates organic growth and engagement</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="benefit-category">
+                        <div class="benefit-header">
+                            <div class="benefit-icon purple"></div>
+                            <div class="benefit-title">Revenue & ROI</div>
+                        </div>
+                        <ul class="benefit-list">
+                            <li>• Brings your investment money back</li>
+                            <li>• Increases monetization opportunities</li>
+                            <li>• Attracts premium players and spenders</li>
+                            <li>• Improves long-term revenue potential</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="benefit-category">
+                        <div class="benefit-header">
+                            <div class="benefit-icon yellow"></div>
+                            <div class="benefit-title">Competitive Advantage</div>
+                        </div>
+                        <ul class="benefit-list">
+                            <li>• Outperforms competitors with higher activity</li>
+                            <li>• Creates network effects that attract real players</li>
+                            <li>• Establishes market presence faster</li>
+                            <li>• Builds sustainable player community</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq hidden">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Get answers to common questions about our alt testing services</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(0)">
+                    <span>How does alt account testing work?</span>
+                    <span id="faq-icon-0">+</span>
+                </div>
+                <div class="faq-answer" id="faq-answer-0">
+                    Our network of alternative accounts joins your Roblox game server to simulate real player behavior. This helps test server performance, identify bottlenecks, and optimize your game for better player experience.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(1)">
+                    <span>Is this service safe and compliant with Roblox ToS?</span>
+                    <span id="faq-icon-1">+</span>
+                </div>
+                <div class="faq-answer" id="faq-answer-1">
+                    Yes, our testing services are designed to help developers optimize their games within Roblox's terms of service. We focus on legitimate performance testing and game improvement.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(2)">
+                    <span>How quickly can I get results?</span>
+                    <span id="faq-icon-2">+</span>
+                </div>
+                <div class="faq-answer" id="faq-answer-2">
+                    Most tests begin within 24 hours of your request, with initial results available immediately during testing. Comprehensive reports are delivered within 48 hours.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(3)">
+                    <span>Can I test multiple games with one package?</span>
+                    <span id="faq-icon-3">+</span>
+                </div>
+                <div class="faq-answer" id="faq-answer-3">
+                    Yes! All our packages include unlimited testing access, so you can test multiple games or run multiple test sessions on the same game.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(4)">
+                    <span>What kind of reports do I receive?</span>
+                    <span id="faq-icon-4">+</span>
+                </div>
+                <div class="faq-answer" id="faq-answer-4">
+                    Reports include server performance metrics, player behavior analysis, bottleneck identification, optimization recommendations, and detailed analytics based on your package level.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact hidden">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Started Today</h2>
+                <p>Ready to optimize your Roblox game? Contact us to begin testing with our alt account network.</p>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="gameUrl">Game URL *</label>
+                        <input type="url" id="gameUrl" name="gameUrl" placeholder="https://www.roblox.com/games/..." required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="package">Preferred Package</label>
+                        <select id="package" name="package" style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 0.5rem;">
+                            <option value="starter">Starter - $15</option>
+                            <option value="professional" selected>Professional - $35</option>
+                            <option value="enterprise">Enterprise - $75</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Requirements</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your specific testing needs..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%">Submit Request</button>
+                </form>
+                
+                <div id="form-success" class="hidden" style="text-align: center; margin-top: 2rem; padding: 1rem; background: #dcfce7; border-radius: 0.5rem; color: #16a34a;">
+                    <strong>Thank you!</strong> Your request has been submitted successfully. We'll contact you within 24 hours.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Roblox Alts</h3>
+                    <p>Professional alternative account testing services for Roblox developers. Optimize your games with our comprehensive testing solutions.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="#packages" onclick="showSection('packages')">Testing Packages</a>
+                    <a href="#how-it-works" onclick="showSection('how-it-works')">How It Works</a>
+                    <a href="#contact" onclick="showSection('contact')">Get Started</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <a href="#faq" onclick="showSection('faq')">FAQ</a>
+                    <a href="#contact" onclick="showSection('contact')">Contact Us</a>
+                    <a href="#contact" onclick="showSection('contact')">24/7 Support</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: support@robloxalts.com</p>
+                    <p>Response Time: Within 24 hours</p>
+                    <p>Available: 24/7</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Roblox Alts. All rights reserved. Professional game testing services.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation and Section Management
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = ['home', 'packages', 'how-it-works', 'faq', 'contact'];
+            sections.forEach(id => {
+                const section = document.getElementById(id);
+                if (section) {
+                    if (id === sectionId) {
+                        section.classList.remove('hidden');
+                    } else {
+                        section.classList.add('hidden');
+                    }
+                }
+            });
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // FAQ Toggle
+        let openFAQ = null;
+        
+        function toggleFAQ(index) {
+            const answer = document.getElementById(`faq-answer-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            
+            if (openFAQ === index) {
+                // Close currently open FAQ
+                answer.classList.remove('open');
+                icon.textContent = '+';
+                openFAQ = null;
+            } else {
+                // Close previously open FAQ
+                if (openFAQ !== null) {
+                    document.getElementById(`faq-answer-${openFAQ}`).classList.remove('open');
+                    document.getElementById(`faq-icon-${openFAQ}`).textContent = '+';
+                }
+                
+                // Open new FAQ
+                answer.classList.add('open');
+                icon.textContent = '−';
+                openFAQ = index;
+            }
+        }
+        
+        // Contact Form Handling
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                gameUrl: formData.get('gameUrl'),
+                package: formData.get('package'),
+                message: formData.get('message')
+            };
+            
+            // Simulate form submission
+            console.log('Form submitted:', data);
+            
+            // Hide form and show success message
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('form-success').classList.remove('hidden');
+            
+            // Reset form after delay
+            setTimeout(() => {
+                document.getElementById('contactForm').style.display = 'block';
+                document.getElementById('form-success').classList.add('hidden');
+                document.getElementById('contactForm').reset();
+            }, 5000);
+        }
+        
+        // Smooth scrolling for anchor links
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show home section by default
+            showSection('home');
+            
+            // Add smooth scrolling to all links
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = this.getAttribute('href').substring(1);
+                    showSection(target);
+                });
+            });
+        });
+        
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.background = 'white';
+                navbar.style.backdropFilter = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
